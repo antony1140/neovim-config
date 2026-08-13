@@ -1,5 +1,9 @@
+
+vim.g.mapleader = ' '
 vim.cmd("set number")
 vim.cmd("set relativenumber")
+vim.keymap.set('n', '<Leader>e', '<cmd>Ex<cr>')
+vim.keymap.set('n', '<Leader>ww', 'g<ctrl-g>')
 
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
